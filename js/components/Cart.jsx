@@ -4,7 +4,11 @@ var React = require('react');
 
 var Product = React.createClass({
     render: function () {
-        return <div>{this.props.children}</div>;
+        return <div className="cartProduct">
+          <img src={this.props.product.image} height="50px" />
+          <div className="cartTitle"> {this.props.product.title} - &#36;{this.props.product.price} x {this.props.product.quantity} </div> 
+
+        </div>;
     }
 });
 
@@ -27,7 +31,8 @@ var Cart = React.createClass({
         var nodes = !hasProducts ?
             <div>Please add some products to cart.</div> :
             products.map(function (p) {
-                return <Product key={p.id}>{p.title} - &#36;{p.price} x {p.quantity}</Product>;
+                return <Product key={p.id} product={p}>
+                </Product>;
             });
 
         return (

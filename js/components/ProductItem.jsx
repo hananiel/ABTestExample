@@ -23,14 +23,17 @@ var ProductItem = React.createClass({
                 </div>
 
                 <div className="ProductCard-infoBlock">
+                  <div className="ProductCard-name-surround">
                   <a className="Link ProductCard-name" href="#">{product.title}</a>
+
                   <div className="ProductCard-sizing">{product.quantity}</div>
+                    </div>
                   <div className="PriceDisplay">
-                    <span data-icon="" data-text="" className="Text Color" size="12">{product.price}</span>
+                    <span data-icon="" data-text="" className="Text Color" size="12">&#36; {product.price}</span>
                   </div>
                 </div>
 
-                <button className="uk-button uk-button-small uk-button-primary"
+                <button className="addToCartButton"
                     onClick={this.props.onAddToCartClicked}
                     disabled={product.inventory > 0 ? '' : 'disabled'}>
                     {product.inventory > 0 ? 'Add to cart' : 'Sold Out'}

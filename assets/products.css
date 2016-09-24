@@ -1,18 +1,82 @@
 body {
   margin: 10px;
 }
+.cartProduct{
+  background-color: #fff;
+  padding: 10px;
+  border: solid 1px #e1e1e1;
+}
+.cartTitle{
+  margin-top: -40px;
+  margin-left: 50px;
+  padding-bottom: 10px;
+}
+.ProductCard .ProductCard-name{
+  font-size: 14px;
+  font-weight: 500;
 
+}
+.ProductCard-name-surround{
+  height: 60px;
+}
+.ProductCard .ProductCard-sizing {
+    font-style: italic;
+    font-size: 12px;
+}
+.ProductCard {
+    border: 1px solid hsl(210, 4%, 91%);
+    padding: 10px 10px 70px;
+    color: #404040;
+}
+a {
+      cursor: pointer;
+      background-color: transparent;
+}
+a:visited, a:link {
+    color: hsl(205, 100%, 35%);
+}
+.ProductGrid *, .ProductGrid *:after, .ProductGrid *:before {
+    box-sizing: border-box;
+}
+.Link {
+      text-decoration: none;
+}
+.Page * {
+    -webkit-font-smoothing: antialiased;
+}
+.ContainerGrid {
+  border: solid transparent;
+   border-width: 10px;
+   border-image:url("../images/gridborder.png") 0% 100% repeat;
+   border-left: none;
 
+   width: 970px;
+   border-top: 0px;
+   border-bottom: 0px;
+}
+.ContainerGrid h1{
+  border-top:0px;
+  margin-top: -4px;
+  padding-top:0px;
+}
+.addToCartButton{
+  background-color: #0068b3;
+  color: #fff;
+  border-radius: 3px;
+  vertical-align: middle;
+  font-weight: 400;
+  height: 32px;
+  border: none;
+  width: 130px;
+  margin-left: auto;
+
+}
 .grid {
   overflow: hidden;
   padding: 0.5em 0 0 0.5em;
   max-width: 952px;
   margin: 0 auto 5px 10px;
   list-style: none;
-  border: solid transparent;
-   border-width: 10px;
-   border-image:url("../images/gridborder.png") 0% 100% repeat;
-   border-left: none;
 
 }
 
@@ -23,6 +87,7 @@ body {
 
 .grid li img {
   display: block;
+  margin: auto;
 }
 
 .grid h2 {
@@ -32,8 +97,9 @@ body {
 .grid li > div,
 .grid li > h2 {
   background: #fff;
-  text-align: center;
-  margin: 0;
+  text-align: left;
+  margin: 0 0 10px 0px;
+
 }
 
 .grid li.title h2 {

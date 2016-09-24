@@ -13,7 +13,7 @@ class ProductsContainer extends Component {
             <img src="images/header.png" />
             <img src="images/hero.png" />
               <img src="images/fuelcenter.png" />
-            <ProductsList title="Your Next Shop">
+            <ProductsList title="Your Next Shop" version="1.0">
                 {products.map(product =>
                     <ProductItem
                         key={product.id}

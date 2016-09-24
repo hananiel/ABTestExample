@@ -10,13 +10,8 @@ var ProductsList = React.createClass({
     render: function () {
         return (
 
-                  <div>
-                    <label className="ContainerGrid-header-title">{this.props.title}</label>
-                      <div className="ContainerGrid-navLinks">
-                        <a className="Link" href="#">Sale Items For You</a>
-                      <a className="Link" href="#">Recent Purchases</a>
-                    </div>
-
+                  <div className="ContainerGrid">
+                    <h1>{this.props.title} v{this.props.version}</h1>
                     <ul className="grid">{this.props.children} </ul>
                   </div>
 
