@@ -1,0 +1,45 @@
+{
+  "name": "homepage",
+  "main": "js/app.js",
+  "scripts": {
+    "start": "watchify . -o build/bundle.js -v -d",
+    "build": "browserify js/app.js > build/bundle.js"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "stage": 2,
+          "optional": [
+            "runtime"
+          ]
+        }
+      ],
+      "envify"
+    ]
+  },
+  "dependencies": {
+    "es5-shim": "^4.5.9",
+    "object-assign": "^4.1.0",
+    "react": "^15.3.2",
+    "react-redux": "^3.0.1",
+    "redux": "^3.0.2",
+    "redux-thunk": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-runtime": "^5.8.3",
+    "babelify": "^6.3.0",
+    "browserify": "^11.2.0",
+    "envify": "^3.2.0",
+    "eslint": "^1.5.1",
+    "eslint-plugin-react": "^3.6.2",
+    "react-dom": "^15.3.2",
+    "reactify": "^1.1.1",
+    "redux-logger": "^2.0.1",
+    "uglify-js": "^2.4.16",
+    "util-deprecate": "^1.0.1",
+    "watchify": "^3.4.0"
+  }
+}
