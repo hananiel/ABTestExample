@@ -11,6 +11,16 @@ body {
   margin-left: 50px;
   padding-bottom: 10px;
 }
+.PriceYellowTag {
+  background-color: yellow;
+  margin-right: 15px;
+}
+.PriceYellowHidden{
+  display: none;
+}
+.PriceStrikeOut {
+  text-decoration: line-through;
+}
 .ProductCard .ProductCard-name{
   font-size: 14px;
   font-weight: 500;

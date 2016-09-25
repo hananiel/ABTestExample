@@ -11,7 +11,7 @@ var ProductsList = React.createClass({
         return (
 
                   <div className="ContainerGrid">
-                    <h1>{this.props.title} v{this.props.version}</h1>
+                    <h1>{this.props.title} v {this.props.version}</h1>
                     <ul className="grid">{this.props.children} </ul>
                   </div>
 

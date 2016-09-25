@@ -13,7 +13,8 @@ const middleware = process.env.NODE_ENV === 'production' ?
     [thunk, logger()];
 
 const createStoreWithMiddleware = applyMiddleware(...middleware)(createStore);
-const store = createStoreWithMiddleware(reducer);
+const store = createStoreWithMiddleware(reducer, 
+    window.devToolsExtension && window.devToolsExtension());
 
 store.dispatch(getAllProducts());
 

@@ -1,7 +1,7 @@
 [
-    {"id": 1, "title": "Celery Larger", "quantity": "1 count", "price": 0.99, "inventory": 2, "image": "images/products/celery.png"},
+    {"id": 1, "title": "Celery Larger", "quantity": "1 count", "price": 0.99, "yellowtag": 0.79, "inventory": 2, "image": "images/products/celery.png"},
     {"id": 2, "title": "Kroger Fat Free Chicken Broth", "quantity": "32 fl oz", "price": 1.19, "inventory": 10, "image": "images/products/broth.png"},
-    {"id": 3, "title": "Simple Truth Natural Chicken Breast", "quantity": "1 lb","price": 19.99, "inventory": 5, "image": "images/products/chicken.png"},
+    {"id": 3, "title": "Simple Truth Natural Chicken Breast", "quantity": "1 lb","price": 19.99, "yellowtag":14.59, "inventory": 5, "image": "images/products/chicken.png"},
     {"id": 4, "title": "Red Seedless Grapes", "quantity": "1 lb","price": 1.29, "inventory": 5, "image": "images/products/redgrapes.png"},
     {"id": 5, "title": "Celery Larger", "quantity": "1 count", "price": 0.99, "inventory": 2, "image": "images/products/celery.png"},
     {"id": 6, "title": "Kroger Fat Free Chicken Broth", "quantity": "32 fl oz", "price": 1.19, "inventory": 10, "image": "images/products/broth.png"},

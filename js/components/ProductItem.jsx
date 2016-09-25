@@ -14,7 +14,9 @@ var ProductItem = React.createClass({
     },
 
     render: function () {
-        var product = this.props.product;
+        var {product, version} = this.props;
+        var showYellowTag = product.yellowtag && version != "1.0.0";
+
 
         return (
             <li className="ProductCard">
@@ -29,7 +31,8 @@ var ProductItem = React.createClass({
                   <div className="ProductCard-sizing">{product.quantity}</div>
                     </div>
                   <div className="PriceDisplay">
-                    <span data-icon="" data-text="" className="Text Color" size="12">&#36; {product.price}</span>
+                    <span size="14" className={ showYellowTag ? "PriceYellowTag": "PriceYellowHidden" }>&#36; {product.yellowtag}</span>
+                    <span size="12" className={ showYellowTag ?  "PriceStrikeOut":"Normal"}>&#36; {product.price} {}</span>
                   </div>
                 </div>
 
