@@ -18,7 +18,7 @@ class ProductsContainer extends Component {
 
         }
         this.state = {
-          version: matches[1] || "1.0.0"
+          version: (matches && matches[1])? matches[1] : "1.0.0"
         };
     };
     render() {
