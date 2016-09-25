@@ -22,6 +22,9 @@
   },
   "dependencies": {
     "es5-shim": "^4.5.9",
+    "kroger-um-mapping-config": "^1.0.69",
+    "kroger-um-transform-config": "^1.0.4",
+    "kroger-usage-metrics": "^2.0.1",
     "object-assign": "^4.1.0",
     "react": "^15.3.2",
     "react-redux": "^4.2.1",

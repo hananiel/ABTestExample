@@ -16,16 +16,17 @@ export function getAllProducts() {
 }
 
 export const ADD_TO_CART = 'ADD_TO_CART';
-function addToCartUnsafe(productId) {
+function addToCartUnsafe(productId, version) {
     return {
         type: ADD_TO_CART,
-        productId
+        productId,
+        version: version
     };
 }
-export function addToCart(productId) {
+export function addToCart(productId, version) {
     return (dispatch, getState) => {
         if (getState().products.byId[productId].inventory > 0) {
-            dispatch(addToCartUnsafe(productId));
+            dispatch(addToCartUnsafe(productId,version));
         }
     };
 }
