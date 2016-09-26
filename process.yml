@@ -1,0 +1,9 @@
+apps:  
+  - script   : js/server.js
+    name : abhomepage
+    instances: 1
+    exec_mode: cluster
+    env    :
+      NODE_ENV: development
+      PORT: 8555
+      WEBSITE_HOSTNAME: clickstream-dev.kroger.com
