@@ -20,7 +20,7 @@ function addToCartUnsafe(productId, version) {
     return {
         type: ADD_TO_CART,
         productId,
-        version: version
+        componentVersion: version
     };
 }
 export function addToCart(productId, version) {

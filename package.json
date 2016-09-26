@@ -2,9 +2,10 @@
   "name": "homepage",
   "main": "js/app.js",
   "scripts": {
-    "fs": "watchify . -o build/bundle.js -v -d",
-    "start": "watchify-server js/app.js --index index.html --port 3000",
-    "build": "browserify js/app.js > build/bundle.js"
+    "watchfs": "watchify . -o build/bundle.js -v -d",
+    "watchify-server": "watchify-server js/app.js --index watchifyIndex.html --port 3000",
+    "build": "browserify js/app.js > build/bundle.js",
+    "start": "node js/server.js"
   },
   "browserify": {
     "transform": [
@@ -22,6 +23,7 @@
   },
   "dependencies": {
     "es5-shim": "^4.5.9",
+    "express": "^4.14.0",
     "kroger-um-mapping-config": "^1.0.69",
     "kroger-um-transform-config": "^1.0.4",
     "kroger-usage-metrics": "^2.0.1",
@@ -46,5 +48,9 @@
     "uglify-js": "^2.4.16",
     "util-deprecate": "^1.0.1",
     "watchify": "^3.4.0"
+  },
+  "engines": {
+    "node": "4.4.x",
+    "npm": "3.3.12"
   }
 }

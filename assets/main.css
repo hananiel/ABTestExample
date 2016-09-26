@@ -13,6 +13,18 @@
     width: 300px;
     height: 980px;
 }
+.checkoutButton{
+   background-color: #0d5580;
+   color: #fff;
+    border-radius: 3px;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 400;
+    height: 36px;
+    border: none;
+    width: 290px;
+    margin-left: auto;
+  }
 .greeting {
    font-family:  Roboto, "Trebuchet MS", Arial, "sans-serif";
    color: #919191;

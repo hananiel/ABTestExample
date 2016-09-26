@@ -6,7 +6,7 @@ var Product = React.createClass({
     render: function () {
         return <div className="cartProduct">
           <img src={this.props.product.image} height="50px" />
-          <div className="cartTitle"> {this.props.product.title} - &#36;{this.props.product.price} x {this.props.product.quantity} </div> 
+          <div className="cartTitle"> {this.props.product.title} - &#36;{this.props.product.price} x {this.props.product.quantity} </div>
 
         </div>;
     }
@@ -42,7 +42,7 @@ var Cart = React.createClass({
                 <img src="images/triplabel.png" />
                 <div className="">{nodes}</div>
                 <div className="">Estimated Total: &#36;{this.props.total}</div>
-                <button className=""
+                <button className="checkoutButton"
                     onClick={this.props.onCheckoutClicked}
                     disabled={hasProducts ? '' : 'disabled'}>
                     Checkout
